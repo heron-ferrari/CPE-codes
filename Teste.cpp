@@ -2,14 +2,22 @@
 
 using namespace std;
 
+void troca(int& x, int& y){
+    int aux;
+
+    aux = x;
+    x = y;
+    y = aux;
+    cout << x << " " << y << " " << aux << endl;
+}
+
 int main(){
 
-int a = 1.0, b = 2.0;
-float c;
+    int a = 100, b = 200;
 
-c = a/b;
+    troca(a, b);
 
-cout << c << endl;
+    cout << "a = " << a << ", b = " << b << endl;
 
     return 0;
 }
